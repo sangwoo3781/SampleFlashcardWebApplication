@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>TOP</title>
+</head>
+
+<body>
+  <h1>FLASHCARD</h1>
+
+  <ul>
+    <li><a href="questions.html">Start learnig</a></li>
+    <li><a href="words.html">Show words</a></li>
+  </ul>
+
+  <form method="post">
+    <fieldset>
+      <legend>Create</legend>
+      
+      <label for="english">
+        <p>English</p>
+      </label>
+      <input type="text" name="english">
+      
+      <label for="japanese">
+        <p>Japanese</p>
+      </label>
+      <input type="text" name="japanese">
+      
+      <label for="comment">
+        <p>Comment</p>
+      </label>
+      <textarea name="comment" cols="40" rows="4"></textarea>
+      <div id="submit">
+        <input type="submit" value="Submit">
+      </div>
+    </fieldset>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Questions</title>
+</head>
+
+<body>
+  <p class="back"><a href="index.html">Quit</a></p>
+  <div class="buttons">
+    <button id="prev">Prev</button>
+    <button id="show">Show the answer</button>
+    <button id="next">Next</button>
+  </div>
+  <dl class="questions-word">
+    <% for (let i = 0; i < documents.length; i++) { %>
+      <div class="word">
+        <dt><%= documents[i].english %></dt>
+        <dd><%= documents[i].japanese %></dd>
+        <dd><%= documents[i].comment %></dd>
+      </div>
+    <% } %>
+  </dl>
+  <script type="text/javascript" src="../js/switching_the_display.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Words</title>
+</head>
+<body>
+  <ul>
+    <li><a href="index.html">Go back</a></li>
+  </ul>
+  <dl>
+    <% for (let i = 0; i < documents.length; i ++) { %>
+      <div class="words-div">
+        <dt><%= documents[i].english %></dt>
+        <dd><%= documents[i].japanese %></dd>
+        <dd><%= documents[i].comment %></dd>
+      </div>
+    <% } %>
+  </dl>
+</body>
+</html>
+
